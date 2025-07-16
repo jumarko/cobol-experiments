@@ -31,6 +31,9 @@
            ACCEPT WS-LAST-NAME OF WS-USER
            DISPLAY "What is your age?"
            ACCEPT WS-AGE OF WS-USER
+      *    NOTE: '... OF WS-USER' isn't strictly needed here
+      *    - however, it would be required if there were more records
+      *      with subelements of the same name
            STRING WS-FIRST-NAME OF WS-USER DELIMITED BY SPACE
                SPACE DELIMITED BY SIZE
                WS-LAST-NAME OF WS-USER DELIMITED BY SPACE
